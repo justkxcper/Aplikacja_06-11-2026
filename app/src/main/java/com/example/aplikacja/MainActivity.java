@@ -1,6 +1,9 @@
 package com.example.aplikacja;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
-}
+
+    Button dalej = findViewById(R.id.dalej);
+    Button wstecz = findViewById(R.id.wstecz);
+    ImageView zdj = findViewById(R.id.zdj);
+    int zdjecia[] = new int[]{R.drawable.gory2,R.drawable.gory1,R.drawable.gory3,R.drawable.gory4,R.drawable.gory5};
+
+    wstecz.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+        }
+    };
+    }};
